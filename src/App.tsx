@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, StyleSheet, Text, View} from 'react-native';
+import {Button, SafeAreaView, StyleSheet, Text, View} from 'react-native';
 
 import {useCommonState} from './hooks/useCommonState.second';
 
@@ -64,7 +64,7 @@ const SecondTypeComponentB: React.FC = () => {
 
 const App: React.FC = () => {
   return (
-    <View style={styles.rootWrapper}>
+    <SafeAreaView style={styles.rootWrapper}>
       <View>
         <View style={styles.buttonWrapper}>
           <FirstTypeComponentA />
@@ -81,7 +81,7 @@ const App: React.FC = () => {
           <SecondTypeComponentB />
         </View>
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
